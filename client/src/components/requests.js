@@ -1,4 +1,4 @@
-import $ from 'jQuery';
+
 
 var postReq = (options, callback) => {
   // TODO

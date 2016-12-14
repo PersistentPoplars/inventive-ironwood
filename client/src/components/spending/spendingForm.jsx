@@ -1,6 +1,4 @@
 import React from 'react';
-import Bootstrap from 'bootstrap-jquery';
-import form-elements from '../../../assets/css/form-elements.css';
 
 var SpendingForm = (props) => (
   <form className='form-inline' onSubmit={props.submit}>

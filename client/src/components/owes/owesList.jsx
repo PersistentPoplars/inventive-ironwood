@@ -1,7 +1,7 @@
 import React from 'react';
 import DuesForm from './duesForm.jsx';
 import LoansForm from './loansForm.jsx';
-import styles from '../../../assets/css/style.css';
+import OwesListEntry from './OwesListEntry.jsx';
 
 var OwesList = (props) => (
   <div className="owes">

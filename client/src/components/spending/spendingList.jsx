@@ -1,6 +1,6 @@
 import React from 'react';
-import spendingForm from './spendingForm.jsx';
-import spendingListEntry from './spendingListEntry.jsx';
+import SpendingForm from './spendingForm.jsx';
+import SpendingListEntry from './spendingListEntry.jsx';
 
 var SpendingList = (props) => (
   <div className="spending">

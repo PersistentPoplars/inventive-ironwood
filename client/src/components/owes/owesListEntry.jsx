@@ -1,5 +1,4 @@
 import React from 'react';
-import Bootstrap from 'bootstrap-jquery';
 import moment from 'moment';
 
 var OwesListEntry = (props) => (
