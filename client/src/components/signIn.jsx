@@ -1,3 +1,7 @@
+import React from 'react';
+import Bootstrap from 'bootstrap-jquery';
+import style from '../../assets/css/style.css';
+
 var signIn = (props) => (
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
@@ -27,4 +31,4 @@ var signIn = (props) => (
                     </div>
 );
 
-window.signIn = signIn;
+module.exports = signIn;

@@ -1,3 +1,7 @@
+import React from 'react';
+import Bootstrap from 'bootstrap-jquery';
+import form-elements from '../../../assets/css/form-elements.css';
+
 var DuesForm = (props) => (
   <form className='form-inline' onSubmit={props.submitOwesLoans}>
     <h3>Add Dues</h3>
@@ -19,4 +23,4 @@ DuesForm.prototypes = {
   list: React.PropTypes.object.isRequired
 };
 
-window.DuesForm = DuesForm;
+module.exports = DuesForm

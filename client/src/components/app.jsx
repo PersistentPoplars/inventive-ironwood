@@ -1,3 +1,8 @@
+import React from 'react';
+import SpendingList from './spending/spendingList.jsx';
+import OwesList from './owes/owesList.jsx';
+import Sidebar from './sidebar.jsx'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -101,4 +106,4 @@ class App extends React.Component {
   }
 
 }
-window.App = App;
+module.exports = App;

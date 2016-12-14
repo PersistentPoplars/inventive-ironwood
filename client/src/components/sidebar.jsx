@@ -1,3 +1,6 @@
+import React from 'react';
+import Bootstrap from 'bootstrap-jquery';
+
 var Sidebar = (props) => (
   <ul className="sidebar-nav">
     <li className="sidebar-brand">
@@ -30,4 +33,4 @@ var Sidebar = (props) => (
   </ul>
 );
 
-window.Sidebar = Sidebar;
+module.exports = Sidebar
