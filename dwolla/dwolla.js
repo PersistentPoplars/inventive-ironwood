@@ -6,7 +6,7 @@ var client = new dwolla.Client({
   environment: 'sandbox'
 });
 
-var accountToken = new client.Token({'access_token': 'LTJp3VjQYN3Rst1qpah5Fl25W7RXF94QCNIQ8GkFSIGfAjnNqV'});
+var accountToken = new client.Token({'access_token': 'ilPhJ69kZwwl9y7UehyGUwPBorVo9lmLan1vTCsi1ZuzvZaS8p'});
 
 var createVerifiedCustomer = (firstName, lastName, email, ipAddress, address1, address2, city, state, zip, dob, ssn) => {
   if (address2) {
