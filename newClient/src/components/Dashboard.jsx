@@ -8,16 +8,17 @@ import { getUser } from '../lib/ajax.js';
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
-    this.state= {
-      username: null
-    }
+    this.state = {
+      username: null,
+      photoUrl: null
+    };
   }
 
   componentWillMount() {
-    getUser((user) => {
-      this.setState({
-        username: user
-      })
+    getUser((data) => {
+      console.log(data);
+      this.setState({username: data.username, photoUrl: data.photoUrl});
+      console.log(this.state);
     });
   }
 
@@ -28,7 +29,7 @@ class Dashboard extends React.Component {
       <div id="wrapper" className="app">
       
         <div id='sidebar-wrapper'>
-          <Sidebar username={this.state.username}/>
+          <Sidebar photoUrl={this.state.photoUrl} username={this.state.username}/>
         </div>
 
         <div>

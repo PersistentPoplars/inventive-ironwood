@@ -66,7 +66,7 @@ class LoanList extends React.Component {
       );
     } else if (cell === 'active') {
       return (
-        <span>Active</span>
+        <span style={{color: 'green', 'font-weight': 'bold'}}>Active</span>
       );
     }
   }

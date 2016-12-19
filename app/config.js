@@ -21,6 +21,7 @@ db.knex.schema.hasTable('users').then(function(exists) {
       user.string('password', 255);
       user.string('firstName');
       user.string('lastName');
+      user.string('photoUrl');
     }).then(function (table) {
       console.log('Created Table', table);
     });
