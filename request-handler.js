@@ -83,9 +83,9 @@ exports.logout = function(req, res) {
 
 exports.getUser = function(req, res) {
   new User({id: req.session.user.id}).fetch().then(function(user) {
-    res.json(user.attributes.username);
+    res.json({username: user.attributes.username, photoUrl: user.attributes.photoUrl});
   });
-}
+};
 
 exports.transactions = function(req, res) {
   var category = req.body.category;
