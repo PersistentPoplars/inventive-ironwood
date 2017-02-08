@@ -23,6 +23,14 @@ From within the root directory:
 npm install
 ```
 
+### Getting started
+
+Just start the server with 
+
+```sh
+npm start
+```
+
 ### Roadmap
 
 View the project roadmap [here](https://waffle.io/PersistentPoplars/inventive-ironwood)
