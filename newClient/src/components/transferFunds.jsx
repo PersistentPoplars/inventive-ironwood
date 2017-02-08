@@ -74,8 +74,6 @@ class TransferFunds extends React.Component {
         <div className="form-group">
           <button onClick={this.transaction} name="borrow" type="submit" className="btn btn-success">Transfer</button>
         </div>
-
-        <h1>Hello</h1>
       </form>
     );
   }

@@ -83,15 +83,16 @@ class TransactionView extends React.Component {
     }
     return (
       <div className="spending">
-        <h2>Transactions</h2>
+        <h2>Expenses</h2>
         <Tabs defaultActiveKey={1}>
-          <Tab eventKey={1} title="Table">
-            <TransactionChart isData={this.state.isData} data={this.state.pieData} />
-            <TransactionForm submit={postTransactions}/>
-          </Tab>
-          <Tab eventKey={2} title="Chart">
+          <Tab eventKey={1} title="List View">
             <TransactionForm submit={postTransactions}/>
             <TransactionList getImage={this.pickCategories} transactions={this.state.transactions} />
+          </Tab>
+          <Tab eventKey={2} title="Expense Chart">
+            <div className="transaction-chart">
+            <TransactionChart isData={this.state.isData} data={this.state.pieData} />
+            </div>
           </Tab>
         </Tabs>
       </div>
